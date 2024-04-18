@@ -9,10 +9,10 @@ newJokeBtn.addEventListener("click", function(){
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
-    return response.json(); // Return the parsed JSON
+    return response.json();
   })
   .then(data => {
-    jokeContainer.innerText = data.value; // Access the value property directly
+    jokeContainer.innerText = data.value;
     console.log(data);
   })
   .catch(error => {
