@@ -1,7 +1,6 @@
 const apiUrl = "https://api.chucknorris.io/jokes/random";
 const newJokeBtn = document.getElementById("newJokeBtn");
 const jokeContainer = document.getElementById("joke-container");
-let apiCall = null;
 
 newJokeBtn.addEventListener("click", function(){
     fetch(apiUrl)
